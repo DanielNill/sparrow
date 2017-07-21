@@ -1,7 +1,8 @@
 require 'parser/current'
 
-require 'sparrow/parser_config'
-require 'sparrow/parser'
-require 'sparrow/rewriter'
+require_relative 'sparrow/parser_config'
+require_relative 'sparrow/cleaner'
+require_relative 'sparrow/rewriter'
 
-Sparrow::Parser.new(Dir["#{ARGV.first}/**/*.rb"].to_a).process
+# for now run with ruby lib/sparrow.rb path/to/the/project/you/want/to/clean
+Sparrow::Cleaner.new(Dir["#{ARGV.first}/**/*.rb"].to_a).process
