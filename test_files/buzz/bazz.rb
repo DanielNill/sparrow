@@ -1,7 +1,8 @@
-module Foo
-  module Buzz
-    class Bazz
+class Foo::Buzz::Bazz < Something::Else
+  include Asdf
 
-    end
+  POOP = [1,2,3]
+
+  def asdf
   end
 end

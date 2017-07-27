@@ -1,0 +1,7 @@
+TODO:
+- [ ] indent all children inside the modified class
+- [ ] get it working for files where the class declaration isn't the first line of the file
+- [ ] clean up warnings
+- [ ] add tests
+- [ ] turn into real gem
+
